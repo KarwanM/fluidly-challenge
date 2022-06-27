@@ -9,7 +9,7 @@ function assertNotEquals(expect, actual) {
   // If type of expect and actual is the same
   if (typeof expect === typeof actual) {
     // If type of both expect and actual is Array
-    if (typeof expect === "object") {
+    if (Array.isArray(expect)) {
       // If the length of both array expect and array actual not the same
       if (expect.length !== actual.length) {
         console.log(
